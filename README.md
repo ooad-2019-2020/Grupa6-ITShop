@@ -1,7 +1,7 @@
 ![alt text](https://www.theitshop.com.au/wp-content/uploads/2016/05/IT-Logo.png)
 # Tim
     - Ahmed Pašić
-    - [Contribution guidelines for this project](docs/CONTRIBUTING.md)
+    - [Elma Šeremet](https://github.com/eseremet1)
     - Sabahudin Spahić
     
 
