@@ -1,3 +1,4 @@
+![alt text](https://www.theitshop.com.au/wp-content/uploads/2016/05/IT-Logo.png)
 # Tim
     - Ahmed Pašić
     - Elma Šeremet
