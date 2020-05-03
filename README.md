@@ -49,7 +49,7 @@ Korisnik će imati opciju da sam "sastavi" svoj idealni računar. Ako to ne žel
     - sve mogućnosti opisane pod opcijom "Uposlenik"
     - mogućnost zapošljavanja/dodavanja uposlenika
     - mogućnost brisanja uposlenika
-    - mogućnost brisanje neprimjerenih recenzija
+    - mogućnost brisanja neprimjerenih recenzija
     
     
 
