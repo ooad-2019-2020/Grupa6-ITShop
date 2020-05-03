@@ -6,51 +6,51 @@
     
 
 # ITshop
-ITshop je prvi korak prema “sve na jednom mjestu” za sve vrste proizvoda i usluga koje pruža odjel za informatičke usluge. U svom trenutnom razvojnom studiju omogućuje korisnicima da lahko kupuju hardver potreban za rad, videoigre, studije, istraživanje i proučavanje.
+ITshop je prvi korak prema “sve na jednom mjestu” za sve vrste proizvoda i usluga koje pruža odjel za informatičke usluge. U svom trenutnom razvojnom studiju omogućuje korisnicima da lahko kupuju hardver potreban za rad, studije, istraživanje i proučavanje.
 Korisnik će imati opciju da sam "sastavi" svoj idealni računar. Ako to ne želi, za odabrani iznos može dobiti računar sastavljen od strane naših uposlenika. Korisnik nam saopšti svoje potrebe, a mi pravimo računar idealan za navedenu svrhu. Kupovina je moguća samo ukoliko je korisnik prijavljen, a uz to, ukoliko je u pitanju student, ima brojne pogodnosti prilikom kupovanja hardvera. Nakon narudžbe, vaš računar, ili vaše komponente, bit će dostavljene na vašu kućnu adresu.
 
 # Akteri
-- Korisnik
-- Gost
+- Korisnik - gost
+- Kupac
 - Student
 - Uposlenik
 - Administrator
 
 ## Funkcionalnost
 
-- Gost:
+- Korisnik - gost:
     - mogućnost pregleda osnovnih informacija našeg ITshop-a
     - mogućnost čitanja recenzija za željeni proizvod
     - mogućnost pregleda ponuda koje nudi ITshop
-    - mogućnost registracije,odnosno kreiranja korisničkog računa koji donosi određene pogodnosti navedene pod opcijom "Korisnik"
+    - mogućnost registracije,odnosno kreiranja korisničkog računa koji donosi određene pogodnosti navedene pod opcijom "Kupac"
 
-- Korisnik 
+- Korisnik - kupac 
     - sve mogućnosti opisane pod opcijom "Gost"
     - mogućnost kupovine željenih proizvoda
     - mogućnost slanja zahtjeva za izgradnju svog idealnog računara
     - mogućnost dobivanja naših sugestija zavisno od proizvoda i njegove namjene
     - ostavljanje recenzija na kupljene proizvode
-    - testiranje određenih specifikacija proizvoda
-    - mogućnost dodatne registracije kao "Student" za ostvarivanje popusta
     - mogućnost brisanja svog korisničkog računa
+    - mogućnost dodatne registracije kao "Student" za ostvarivanje popusta
+    
 
 - Student
-    - sve mogućnosti opisane pod opcijom "Korisnik"
+    - sve mogućnosti opisane pod opcijom "Kupac"
     - mogućnost određenih popusta
 
 - Uposlenik:
-    - Postavljanje proizvoda koji su u ponudi
-    - Uklanjanje proizvoda koji više nisu u ponudi
-    - Slanje zahtjeva administratoru za uklanjanje recenzija
-    - Primanje zahtjeva od korisnika za izgradnju računara
-    - Praćenje trenutačnih proizvoda za koje je dati uposlenik zadužen
+    - postavljanje proizvoda koji su u ponudi
+    - uklanjanje proizvoda koji više nisu u ponudi
+    - praćenje trenutačnih proizvoda za koje je dati uposlenik zadužen, te njihovo ažuriranje
+    - primanje zahtjeva od korisnika za izgradnju računara
+    - upravljanje studentskim licencama
 
 - Administrator:
     - sve mogućnosti opisane pod opcijom "Uposlenik"
-    - Ima punu moć nad aplikacijom
-    - Može da zapošljava uposlenike
-    - Brisanje neprimjerenih recenzija
-    - Uklanjanje proizvoda koji više nisu u ponudi
+    - mogućnost zapošljavanja/dodavanja uposlenika
+    - mogućnost brisanja uposlenika
+    - mogućnost brisanje neprimjerenih recenzija
+    
     
 
     
