@@ -11,7 +11,7 @@ Korisnik će imati opciju da sam "sastavi" svoj idealni računar. Ako to ne žel
 
 # Akteri
 - Korisnik - gost
-- Kupac
+- Korisnik - kupac
 - Student
 - Uposlenik
 - Administrator
