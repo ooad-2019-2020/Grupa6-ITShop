@@ -14,7 +14,7 @@ namespace ITShop.Models
         public int BrojVGA { get; set; }
         public string Tip;
 
-        public string setTip(string tip)
+        public void setTip(string tip)
         {
             Tip = tip;
         }
