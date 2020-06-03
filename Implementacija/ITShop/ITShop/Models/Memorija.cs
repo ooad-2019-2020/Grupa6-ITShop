@@ -4,6 +4,7 @@
     {
         public int Kolicina { get; set; }
         public string Tip;
+        public int Id { get; set; }
 
         public void setTip(string Tip)
         {

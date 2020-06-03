@@ -8,6 +8,7 @@ namespace ITShop.Models
 {
     public class Monitor : Proizvod, ITip
     {
+        public int Id { get; set; }
         public double Dijagonala { get; set; }
         public string Rezolucija { get; set; }
         public int BrojHDMI { get; set; }

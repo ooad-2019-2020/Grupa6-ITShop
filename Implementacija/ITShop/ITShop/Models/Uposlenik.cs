@@ -10,5 +10,6 @@ namespace ITShop.Models
     {
         public DateTime DatumZaposljenja { get; set; }
         public List<Proizvod> ListaProizvoda { get; set; }
+        public int Id { get; set; }
     }
 }

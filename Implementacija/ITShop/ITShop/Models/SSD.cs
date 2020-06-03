@@ -9,6 +9,7 @@ namespace ITShop.Models
     {
         public string Tip;
         public double Velicina { get; set; }
+        public int Id { get; set; }
 
         public void setTip(string tip)
         {

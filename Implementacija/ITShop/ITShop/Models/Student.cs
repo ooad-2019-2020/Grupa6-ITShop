@@ -8,6 +8,7 @@ namespace ITShop.Models
     public class Student : Kupac
     {
         public DateTime DatumIstekaLicence { get; set; }
+        public int Id { get; set; }
 
         public void isprazniKorpu(bool gotovaKorpa)
         {

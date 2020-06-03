@@ -8,5 +8,6 @@ namespace ITShop.Models
     public class Tastatura : Proizvod
     {
         public string VrstaPrikljucka { get; set; }
+        public int Id { get; set; }
     }
 }

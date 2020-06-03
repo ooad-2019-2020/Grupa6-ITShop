@@ -3,6 +3,7 @@
     public class ZvucnaKartica : Proizvod, ITip
     {
         public string Tip;
+        public int Id { get; set; }
 
         public void setTip(string tip)
         {
