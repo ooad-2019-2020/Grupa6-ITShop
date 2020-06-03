@@ -8,7 +8,7 @@ namespace ITShop.Models
 {
     public abstract class Korisnik
     {
-        public int Id { get; set; }
+        public int KorisnikId { get; set; }
         public String Ime { get; set; }
         public String Prezime { get; set; }
         public String KorisnickoIme { get; set; }

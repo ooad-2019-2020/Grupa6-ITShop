@@ -7,6 +7,7 @@ namespace ITShop.Models
 {
     public class Administrator : Uposlenik
     {
+        public int AdministratorId { get; set; }
         public void izbrisiUposlenika(int id)
         {
             // Your code here
