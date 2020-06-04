@@ -2,12 +2,12 @@
 
 namespace ITShop.Models
 {
-    public class Memorija :/* Proizvod,*/ ITip
+    public class Memorija : Proizvod, ITip
     {
         public int Kolicina { get; set; }
         public string Tip;
         public int Id { get; set; }
-        public Proizvod Proizvod { get; set; }
+        public int ProizvodId { get; set; }
 
         public void setTip(string Tip)
         {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Racunar //: Proizvod
+    public class Racunar : Proizvod
     {
         public Procesor Procesor { get; set; }
         public Memorija RAM { get; set; }

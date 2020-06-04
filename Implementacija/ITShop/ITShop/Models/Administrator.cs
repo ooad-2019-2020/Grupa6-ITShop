@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Administrator //: Uposlenik
+    public class Administrator : Uposlenik
     {
         public int AdministratorId { get; set; }
-        public Uposlenik Uposlenik { get; set; }
+        public int UposlenikId { get; set; }
         public void izbrisiUposlenika(int id)
         {
             // Your code here

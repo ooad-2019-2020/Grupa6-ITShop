@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Uposlenik //: Korisnik
+    public class Uposlenik : Korisnik
     {
         public DateTime DatumZaposljenja { get; set; }
         [NotMapped]public List<Proizvod> ListaProizvoda { get; set; }
         public int Id { get; set; }
-        public Korisnik Korisnik { get; set; }
+        public int KorisnikId { get; set; }
     }
 }

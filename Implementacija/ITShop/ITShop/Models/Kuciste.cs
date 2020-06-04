@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Kuciste //: Proizvod
+    public class Kuciste : Proizvod
     {
         public int Id { get; set; }
-        public Proizvod Proizvod { get; set; }
+        public int ProizvodId { get; set; }
         public double Zapremina { get; set; }
         public int BrojPortova { get; set; }
     }

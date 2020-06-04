@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Monitor :/* Proizvod,*/ ITip
+    public class Monitor : Proizvod, ITip
     {
         public int Id { get; set; }
-        public Proizvod Proizvod { get; set; }
+        public int ProizvodId { get; set; }
         public double Dijagonala { get; set; }
         public string Rezolucija { get; set; }
         public int BrojHDMI { get; set; }

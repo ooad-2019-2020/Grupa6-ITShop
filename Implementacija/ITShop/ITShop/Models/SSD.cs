@@ -11,7 +11,7 @@ namespace ITShop.Models
         public string Tip;
         public double Velicina { get; set; }
         public int Id { get; set; }
-        public Disk Disk { get; set; }
+        public int DiskId { get; set; }
         public void setTip(string tip)
         {
             Tip = tip;

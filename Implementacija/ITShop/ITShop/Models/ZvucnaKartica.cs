@@ -2,11 +2,11 @@
 
 namespace ITShop.Models
 {
-    public class ZvucnaKartica :/* Proizvod,*/ ITip
+    public class ZvucnaKartica : Proizvod, ITip
     {
         public string Tip;
         public int Id { get; set; }
-        public Proizvod Proizvod { get; set; }
+        public int ProizvodId { get; set; }
 
         public void setTip(string tip)
         {

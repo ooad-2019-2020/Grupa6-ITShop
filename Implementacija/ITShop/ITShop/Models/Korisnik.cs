@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public /*abstract*/ class Korisnik
+    public abstract class Korisnik
     {
         public int KorisnikId { get; set; }
         public String Ime { get; set; }
