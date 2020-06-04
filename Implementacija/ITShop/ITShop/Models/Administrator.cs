@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,8 +7,8 @@ namespace ITShop.Models
 {
     public class Administrator //: Uposlenik
     {
-        [ForeignKey("administrator_id")]
         public int AdministratorId { get; set; }
+        public Uposlenik Uposlenik { get; set; }
         public void izbrisiUposlenika(int id)
         {
             // Your code here

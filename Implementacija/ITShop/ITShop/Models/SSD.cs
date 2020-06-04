@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace ITShop.Models
         public string Tip;
         public double Velicina { get; set; }
         public int Id { get; set; }
-
+        public Disk Disk { get; set; }
         public void setTip(string tip)
         {
             Tip = tip;

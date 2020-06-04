@@ -32,10 +32,15 @@ namespace ITShop.Migrations
                     b.Property<int>("DuzinaKabla")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.Property<string>("VrstaPrikljucka")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Mis");
                 });
@@ -47,7 +52,12 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("UposlenikId")
+                        .HasColumnType("int");
+
                     b.HasKey("AdministratorId");
+
+                    b.HasIndex("UposlenikId");
 
                     b.ToTable("Administrator");
                 });
@@ -65,7 +75,12 @@ namespace ITShop.Migrations
                     b.Property<int>("Kapacitet")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.HasKey("DiskId");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Disk");
                 });
@@ -83,7 +98,12 @@ namespace ITShop.Migrations
                     b.Property<int>("KolicinaMemorije")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Graficka_Kartica");
                 });
@@ -95,7 +115,12 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("DiskId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("DiskId");
 
                     b.ToTable("HardDisk");
                 });
@@ -143,10 +168,15 @@ namespace ITShop.Migrations
                     b.Property<int>("BrojPortova")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.Property<double>("Zapremina")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Kuciste");
                 });
@@ -158,7 +188,12 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("KorisnikId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("KorisnikId");
 
                     b.ToTable("Kupac");
                 });
@@ -191,10 +226,15 @@ namespace ITShop.Migrations
                     b.Property<int>("BrojRAMSlotova")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SocketProcesora")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Maticna_Ploca");
                 });
@@ -209,7 +249,12 @@ namespace ITShop.Migrations
                     b.Property<int>("Kolicina")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Memorija");
                 });
@@ -230,10 +275,15 @@ namespace ITShop.Migrations
                     b.Property<double>("Dijagonala")
                         .HasColumnType("float");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Rezolucija")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Monitor");
                 });
@@ -251,7 +301,12 @@ namespace ITShop.Migrations
                     b.Property<int>("BrzinaJezgra")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Procesor");
                 });
@@ -287,10 +342,15 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("DiskId")
+                        .HasColumnType("int");
+
                     b.Property<double>("Velicina")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DiskId");
 
                     b.ToTable("SSD");
                 });
@@ -305,10 +365,15 @@ namespace ITShop.Migrations
                     b.Property<bool>("ImaLiMikrofon")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.Property<string>("VrstaPrikljucka")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Slusalice");
                 });
@@ -323,7 +388,12 @@ namespace ITShop.Migrations
                     b.Property<DateTime>("DatumIstekaLicence")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("KupacId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("KupacId");
 
                     b.ToTable("Student");
                 });
@@ -335,10 +405,15 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.Property<string>("VrstaPrikljucka")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProizvodId");
 
                     b.ToTable("Tastatura");
                 });
@@ -353,7 +428,12 @@ namespace ITShop.Migrations
                     b.Property<DateTime>("DatumZaposljenja")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("KorisnikId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("KorisnikId");
 
                     b.ToTable("Uposlenik");
                 });
@@ -365,9 +445,133 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("ProizvodId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("ProizvodId");
+
                     b.ToTable("Zvucna_Kartica");
+                });
+
+            modelBuilder.Entity("ITShop.Data.Mis", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Administrator", b =>
+                {
+                    b.HasOne("ITShop.Models.Uposlenik", "Uposlenik")
+                        .WithMany()
+                        .HasForeignKey("UposlenikId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Disk", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.GrafickaKartica", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.HardDisk", b =>
+                {
+                    b.HasOne("ITShop.Models.Disk", "Disk")
+                        .WithMany()
+                        .HasForeignKey("DiskId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Kuciste", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Kupac", b =>
+                {
+                    b.HasOne("ITShop.Models.Korisnik", "Korisnik")
+                        .WithMany()
+                        .HasForeignKey("KorisnikId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.MaticnaPloca", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Memorija", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Monitor", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Procesor", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.SSD", b =>
+                {
+                    b.HasOne("ITShop.Models.Disk", "Disk")
+                        .WithMany()
+                        .HasForeignKey("DiskId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Slusalice", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Student", b =>
+                {
+                    b.HasOne("ITShop.Models.Kupac", "Kupac")
+                        .WithMany()
+                        .HasForeignKey("KupacId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Tastatura", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.Uposlenik", b =>
+                {
+                    b.HasOne("ITShop.Models.Korisnik", "Korisnik")
+                        .WithMany()
+                        .HasForeignKey("KorisnikId");
+                });
+
+            modelBuilder.Entity("ITShop.Models.ZvucnaKartica", b =>
+                {
+                    b.HasOne("ITShop.Models.Proizvod", "Proizvod")
+                        .WithMany()
+                        .HasForeignKey("ProizvodId");
                 });
 #pragma warning restore 612, 618
         }
