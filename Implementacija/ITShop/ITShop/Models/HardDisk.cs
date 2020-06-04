@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class HardDisk : Disk, ITip
+    public class HardDisk :/* Disk,*/ ITip
     {
         public string Tip;
         public int Id { get; set; }

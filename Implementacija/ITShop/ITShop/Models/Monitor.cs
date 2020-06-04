@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Monitor : Proizvod, ITip
+    public class Monitor :/* Proizvod,*/ ITip
     {
         public int Id { get; set; }
         public double Dijagonala { get; set; }

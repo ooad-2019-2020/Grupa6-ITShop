@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Kuciste : Proizvod
+    public class Kuciste //: Proizvod
     {
         public int Id { get; set; }
         public double Zapremina { get; set; }

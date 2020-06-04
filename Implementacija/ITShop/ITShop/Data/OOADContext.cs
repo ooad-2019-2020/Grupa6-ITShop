@@ -34,17 +34,18 @@ namespace ITShop.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Korisnik>().ToTable("Korisnik");
+            builder.Entity<Kupovina>().ToTable("Kupovina");
+            builder.Entity<Proizvod>().ToTable("Proizvod");
+            
             builder.Entity<Student>().ToTable("Student");
             builder.Entity<Administrator>().ToTable("Administrator");
             builder.Entity<Uposlenik>().ToTable("Uposlenik");
             builder.Entity<Kupac>().ToTable("Kupac");
-            builder.Entity<Korisnik>().ToTable("Korisnik");
             builder.Entity<MaticnaPloca>().ToTable("Maticna_Ploca");
             builder.Entity<GrafickaKartica>().ToTable("Graficka_Kartica");
-            builder.Entity<Proizvod>().ToTable("Proizvod");
             builder.Entity<Monitor>().ToTable("Monitor");
             builder.Entity<Kuciste>().ToTable("Kuciste");
-            builder.Entity<Kupovina>().ToTable("Kupovina");
             builder.Entity<Disk>().ToTable("Disk");
             builder.Entity<SSD>().ToTable("SSD");
             builder.Entity<HardDisk>().ToTable("HardDisk");
@@ -54,6 +55,7 @@ namespace ITShop.Data
             builder.Entity<Mis>().ToTable("Mis");
             builder.Entity<Memorija>().ToTable("Memorija");
             builder.Entity<Procesor>().ToTable("Procesor");
+            
 
         }
     }

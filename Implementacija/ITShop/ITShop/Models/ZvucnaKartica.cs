@@ -1,6 +1,6 @@
 ﻿namespace ITShop.Models
 {
-    public class ZvucnaKartica : Proizvod, ITip
+    public class ZvucnaKartica :/* Proizvod,*/ ITip
     {
         public string Tip;
         public int Id { get; set; }

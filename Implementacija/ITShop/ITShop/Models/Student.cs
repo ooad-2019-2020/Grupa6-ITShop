@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Student : Kupac
+    public class Student //: Kupac
     {
         public DateTime DatumIstekaLicence { get; set; }
         public int Id { get; set; }

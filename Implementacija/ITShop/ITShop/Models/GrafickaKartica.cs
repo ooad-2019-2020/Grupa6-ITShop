@@ -1,6 +1,8 @@
-﻿namespace ITShop.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ITShop.Models
 {
-    public class GrafickaKartica : Proizvod
+    public class GrafickaKartica //: Proizvod
     {
         public int Id { get; set; }
         public int KolicinaMemorije { get; set; }
