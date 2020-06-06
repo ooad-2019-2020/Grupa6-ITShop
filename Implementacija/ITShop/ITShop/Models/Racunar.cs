@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Racunar : Proizvod
+    public class Racunar //: Proizvod
     {
-        
+        [ScaffoldColumn(false)]
+        public int Id { get; set; }
         public Procesor Procesor { get; set; }
         public Memorija RAM { get; set; }
         public Disk Disk { get; set; }

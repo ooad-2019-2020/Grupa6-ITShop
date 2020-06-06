@@ -10,6 +10,7 @@ namespace ITShop.Models
 
         [ScaffoldColumn(false)]
         public int Id { get; set; }
+        [NotMapped]
         public List<Proizvod> ListeProizvoda { get; set; }
         [RegularExpression("^[0-9+]$", ErrorMessage = "Limit predstavlja kapacitet proizvoda korpe.")]
         public int Limit { get; set; }

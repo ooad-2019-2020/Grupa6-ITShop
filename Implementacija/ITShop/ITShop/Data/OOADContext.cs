@@ -44,9 +44,6 @@ namespace ITShop.Data
 
             builder.Entity<KupovinaProizvoda>().ToTable("Kupovina_Proizvod");
             builder.Entity<NacinPlacanjaKlasa>().ToTable("Nacin_Placanja");
-            
-        
-            
 
         }
 
