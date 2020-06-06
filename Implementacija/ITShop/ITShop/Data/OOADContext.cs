@@ -43,28 +43,17 @@ namespace ITShop.Data
             builder.Entity<KupovinaProizvoda>().HasKey(c => new { c.ProizvodId, c.KupovinaId });
 
             builder.Entity<KupovinaProizvoda>().ToTable("Kupovina_Proizvod");
-            builder.Entity<Student>().ToTable("Student");
-            builder.Entity<Administrator>().ToTable("Administrator");
-            builder.Entity<Uposlenik>().ToTable("Uposlenik");
             builder.Entity<NacinPlacanjaKlasa>().ToTable("Nacin_Placanja");
-            builder.Entity<Kupac>().ToTable("Kupac");
-            builder.Entity<MaticnaPloca>().ToTable("Maticna_Ploca");
-            builder.Entity<GrafickaKartica>().ToTable("Graficka_Kartica");
-            builder.Entity<Monitor>().ToTable("Monitor");
-            builder.Entity<Kuciste>().ToTable("Kuciste");
-            builder.Entity<Disk>().ToTable("Disk");
-            builder.Entity<SSD>().ToTable("SSD");
-            builder.Entity<HardDisk>().ToTable("HardDisk");
-            builder.Entity<ZvucnaKartica>().ToTable("Zvucna_Kartica");
-            builder.Entity<Slusalice>().ToTable("Slusalice");
-            builder.Entity<Tastatura>().ToTable("Tastatura");
-            builder.Entity<Mis>().ToTable("Mis");
-            builder.Entity<Memorija>().ToTable("Memorija");
-            builder.Entity<Procesor>().ToTable("Procesor");
+            
+        
             
 
         }
 
         public DbSet<ITShop.Models.MaticnaPloca> MaticnaPloca { get; set; }
+
+        public DbSet<ITShop.Models.Korpa> Korpa { get; set; }
+
+        public DbSet<ITShop.Models.Racunar> Racunar { get; set; }
     }
 }

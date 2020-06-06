@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
-    public class GrafickaKartica //: Proizvod
+    public class GrafickaKartica : Proizvod
     {
         [ScaffoldColumn(false)]
         public int Id { get; set; }

@@ -1,0 +1,31 @@
+﻿.korisnikRegistracija {
+    background-color:#3199CE;
+    width:40%;
+    text-align:center;
+    align-content:center;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+h1 {
+    font-size: 24px;
+}
+
+hr {
+    width:60%;
+}
+
+input {
+    width: 200px;
+    text-align:center;
+    height:30px;
+}
+
+.form-group {
+    margin-bottom:5px;
+}

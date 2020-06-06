@@ -1,10 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
     public class Korpa
     {
+
+
+        [ScaffoldColumn(false)]
+        public int Id { get; set; }
         public List<Proizvod> ListeProizvoda { get; set; }
         [RegularExpression("^[0-9+]$", ErrorMessage = "Limit predstavlja kapacitet proizvoda korpe.")]
         public int Limit { get; set; }
