@@ -4,14 +4,16 @@ using ITShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ITShop.Migrations
 {
     [DbContext(typeof(OOADContext))]
-    partial class OOADContextModelSnapshot : ModelSnapshot
+    [Migration("20200606180029_Validacija1")]
+    partial class Validacija1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

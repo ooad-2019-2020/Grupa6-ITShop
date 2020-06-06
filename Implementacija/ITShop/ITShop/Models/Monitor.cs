@@ -13,7 +13,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Proizvod ProizvodId { get; set; }
+        public Proizvod Proizvod { get; set; }
         [Required]
         [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Dijagonala nije validna.")]
         public double Dijagonala { get; set; }

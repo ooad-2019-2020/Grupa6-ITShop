@@ -42,6 +42,7 @@ namespace ITShop.Data
             //Ovo oznacava da pravimo primary key koji je kombinacija dvije kolone
             builder.Entity<KupovinaProizvoda>().HasKey(c => new { c.ProizvodId, c.KupovinaId });
 
+            builder.Entity<KupovinaProizvoda>().ToTable("Kupovina_Proizvod");
             builder.Entity<Student>().ToTable("Student");
             builder.Entity<Administrator>().ToTable("Administrator");
             builder.Entity<Uposlenik>().ToTable("Uposlenik");

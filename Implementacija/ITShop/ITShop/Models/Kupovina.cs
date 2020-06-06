@@ -10,7 +10,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Kupac KupacId { get; set; }
+        public Kupac Kupac { get; set; }
         // Mozemo imati vise proizvoda u Kupovini
         [NotMapped]
         public List<Proizvod> ListaProizvoda { get; set; }

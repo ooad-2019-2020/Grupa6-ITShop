@@ -10,7 +10,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Proizvod ProizvodId { get; set; }
+        public Proizvod Proizvod { get; set; }
 
         public void setTip(string tip)
         {
