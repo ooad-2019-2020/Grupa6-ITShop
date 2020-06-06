@@ -10,8 +10,11 @@ namespace ITShop.Models
     public class Tastatura //: Proizvod
     {
         [Display(Name = "Vrsta priključka")]
+        [Required]
         public string VrstaPrikljucka { get; set; }
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int ProizvodId { get; set; }
+        [ScaffoldColumn(false)]
+        public Proizvod ProizvodId { get; set; }
     }
 }

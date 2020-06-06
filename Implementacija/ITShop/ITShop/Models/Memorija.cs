@@ -1,13 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
-    public class Memorija //: Proizvod, ITip
+    public class Memorija : /*Proizvod,*/ ITip
     {
+        [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]
+        [Required]
         public int Kolicina { get; set; }
-        public string Tip;
+        [Required]
+        private string Tip;
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int ProizvodId { get; set; }
+        [ScaffoldColumn(false)]
+        public Proizvod ProizvodId { get; set; }
 
         public void setTip(string Tip)
         {

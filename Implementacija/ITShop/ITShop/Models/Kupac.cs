@@ -6,8 +6,10 @@ namespace ITShop.Models
 {
     public class Kupac //: Korisnik
     {
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int KorisnikId { get; set; }
+        [ScaffoldColumn(false)]
+        public Korisnik KorisnikId { get; set; }
         [NotMapped] public virtual Korpa Korpa { get; set; }
         [Display(Name = "Prethodne kupovine")]
         [NotMapped] public List<Kupovina> PrethodneKupovine { get; set; }

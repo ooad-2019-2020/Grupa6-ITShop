@@ -9,10 +9,16 @@ namespace ITShop.Models
 {
     public class Kuciste //: Proizvod
     {
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int ProizvodId { get; set; }
+        [ScaffoldColumn(false)]
+        public Proizvod ProizvodId { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Zapremina je realna vrijednost.")]
         public double Zapremina { get; set; }
+        [Required]
         [Display(Name = "Broj portova")]
+        [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]
         public int BrojPortova { get; set; }
     }
 }

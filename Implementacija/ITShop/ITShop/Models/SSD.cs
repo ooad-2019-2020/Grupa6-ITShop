@@ -7,13 +7,18 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class SSD //: Disk, ITip
+    public class SSD : /*Disk,*/ ITip
     {
-        public string Tip;
+        [Required]
+        private string Tip;
+        [Required]
         [Display(Name = "Veličina")]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Veličina nije validna.")]
         public double Velicina { get; set; }
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int DiskId { get; set; }
+        [ScaffoldColumn(false)]
+        public Disk DiskId { get; set; }
         public void setTip(string tip)
         {
             Tip = tip;

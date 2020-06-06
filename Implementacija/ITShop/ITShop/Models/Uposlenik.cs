@@ -11,9 +11,12 @@ namespace ITShop.Models
     public class Uposlenik //: Korisnik
     {
         [Display(Name = "Datum zaposlenja")]
+        [Required]
         public DateTime DatumZaposljenja { get; set; }
         [NotMapped]public List<Proizvod> ListaProizvoda { get; set; }
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int KorisnikId { get; set; }
+        [ScaffoldColumn(false)]
+        public Korisnik KorisnikId { get; set; }
     }
 }

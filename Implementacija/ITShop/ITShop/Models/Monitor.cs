@@ -8,17 +8,27 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Monitor //: Proizvod, ITip
+    public class Monitor : /*Proizvod,*/ ITip
     {
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int ProizvodId { get; set; }
+        [ScaffoldColumn(false)]
+        public Proizvod ProizvodId { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Dijagonala nije validna.")]
         public double Dijagonala { get; set; }
+        [Required]
         public string Rezolucija { get; set; }
         [Display(Name = "Broj HDMI")]
+        [Required]
+        [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]
         public int BrojHDMI { get; set; }
         [Display(Name = "Broj VGA")]
+        [Required]
+        [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]
         public int BrojVGA { get; set; }
-        public string Tip;
+        [Required]
+        private string Tip;
 
         public void setTip(string tip)
         {

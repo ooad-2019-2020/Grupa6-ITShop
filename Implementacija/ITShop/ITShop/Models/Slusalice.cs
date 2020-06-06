@@ -9,10 +9,14 @@ namespace ITShop.Models
 {
     public class Slusalice //: Proizvod
     {
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
-        public int ProizvodId { get; set; }
+        [ScaffoldColumn(false)]
+        public Proizvod ProizvodId { get; set; }
         [Display(Name = "Vrsta priključka")]
+        [Required]
         public string VrstaPrikljucka { get; set; }
+        [Required]
         public bool ImaLiMikrofon { get; set; }
     }
 }
