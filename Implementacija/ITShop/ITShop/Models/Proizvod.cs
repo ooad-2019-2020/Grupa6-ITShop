@@ -1,14 +1,22 @@
 ﻿using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
     public /*abstract*/ class Proizvod
     {
+        [Required]
+        [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]
         public string Naziv { get; set; }
+        [Required]
         public string Proizvodjac { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Cijena nije validna.")]
         public double Cijena { get; set; }
+        //ScaffoldCoulmn govori da ovaj atribut se ne treba koristiti u kontroleru i view-u
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
         public string Slika { get; set; }
        [NotMapped] 
