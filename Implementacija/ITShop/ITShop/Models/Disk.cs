@@ -6,7 +6,7 @@ namespace ITShop.Models
     public class Disk //: Proizvod
     {
         [ScaffoldColumn(false)]
-        public int Id { get; set; }
+        public int DiskId { get; set; }
         public Proizvod ProizvodId { get; set; }
         [RegularExpression("^[0-9+]$", ErrorMessage = "Kapacitet nije validan.")]
         [Required]
