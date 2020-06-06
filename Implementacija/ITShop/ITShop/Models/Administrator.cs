@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,8 +8,10 @@ namespace ITShop.Models
 {
     public class Administrator //: Uposlenik
     {
+        [ScaffoldColumn(false)]
         public int AdministratorId { get; set; }
-        public int UposlenikId { get; set; }
+        [ScaffoldColumn(false)]
+        public Uposlenik UposlenikId { get; set; }
         public void izbrisiUposlenika(int id)
         {
             // Your code here

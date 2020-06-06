@@ -22,6 +22,7 @@ namespace ITShop.Models
        [NotMapped] 
         public List<Kupac> Pratioc { get; set; }
         //Pogledaj u novoj klasi KupovinaProizvoda da vidis zasto postoji atribut Kupovine
+        //NotMapped znaci da se ne treba stavljati ovaj atribut kao kolona u bazi podataka
         [NotMapped]
         public List<Kupovina> Kupovine { get; set; }
 
