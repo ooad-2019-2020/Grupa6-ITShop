@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace ITShop.Models
     public class SSD //: Disk, ITip
     {
         public string Tip;
+        [Display(Name = "Veličina")]
         public double Velicina { get; set; }
         public int Id { get; set; }
         public int DiskId { get; set; }

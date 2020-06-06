@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
@@ -8,6 +9,7 @@ namespace ITShop.Models
         public int Id { get; set; }
         public int KorisnikId { get; set; }
         [NotMapped] public virtual Korpa Korpa { get; set; }
+        [Display(Name = "Prethodne kupovine")]
         [NotMapped] public List<Kupovina> PrethodneKupovine { get; set; }
         [NotMapped] public List<string> Poruke { get; set; }
     }

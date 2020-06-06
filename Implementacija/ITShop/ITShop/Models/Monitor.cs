@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Security.Cryptography;
@@ -13,7 +14,9 @@ namespace ITShop.Models
         public int ProizvodId { get; set; }
         public double Dijagonala { get; set; }
         public string Rezolucija { get; set; }
+        [Display(Name = "Broj HDMI")]
         public int BrojHDMI { get; set; }
+        [Display(Name = "Broj VGA")]
         public int BrojVGA { get; set; }
         public string Tip;
 
