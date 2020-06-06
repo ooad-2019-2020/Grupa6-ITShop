@@ -13,7 +13,7 @@ namespace ITShop.Models
         public string Slika { get; set; }
        [NotMapped] 
         public List<Kupac> Pratioc { get; set; }
-        //Pogledaj u novoj klasi ProizvodKupovina da vidis zasto postoji atribut Kupovine
+        //Pogledaj u novoj klasi KupovinaProizvoda da vidis zasto postoji atribut Kupovine
         [NotMapped]
         public List<Kupovina> Kupovine { get; set; }
 

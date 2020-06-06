@@ -31,13 +31,16 @@ namespace ITShop.Data
         public DbSet<Monitor> Monitor { get; set; }
         public DbSet<Mis> Mis { get; set; }
         public DbSet<Procesor> Procesor { get; set; }
+        public DbSet<KupovinaProizvoda> KupovinaProizvod { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Korisnik>().ToTable("Korisnik");
             builder.Entity<Kupovina>().ToTable("Kupovina");
             builder.Entity<Proizvod>().ToTable("Proizvod");
-            
+            //Ovo oznacava da pravimo primary key koji je kombinacija dvije kolone
+            builder.Entity<KupovinaProizvoda>().HasKey(c => new { c.ProizvodId, c.KupovinaId });
+
             builder.Entity<Student>().ToTable("Student");
             builder.Entity<Administrator>().ToTable("Administrator");
             builder.Entity<Uposlenik>().ToTable("Uposlenik");
