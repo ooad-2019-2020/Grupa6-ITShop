@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
-    public class Kupac : Korisnik
+    public class Kupac //: Korisnik
     {
         public int Id { get; set; }
         public int KorisnikId { get; set; }

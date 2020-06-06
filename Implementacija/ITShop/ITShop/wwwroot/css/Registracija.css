@@ -1,0 +1,46 @@
+﻿.registracijaContainer {
+    padding: 16px;
+    background-color: #3199CE;
+    color: white;
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registracijaButton {
+    background-color: white;
+    color: #3199CE;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+    .registracijaButton:hover {
+        opacity: 1;
+    }
+
+.registracija a {
+    color: white;
+}
+
+.rLogin {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.registracija {
+    clear: both;
+    overflow: hidden;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

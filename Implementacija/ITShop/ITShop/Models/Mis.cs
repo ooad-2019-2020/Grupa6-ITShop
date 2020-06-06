@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Data
 {
-    public class Mis : Proizvod
+    public class Mis 
     {
         public int Id { get; set; }
         public int ProizvodId { get; set; }

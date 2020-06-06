@@ -23,7 +23,17 @@ namespace ITShop.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult ONama()
+        {
+            return View();
+        }
+
+        public IActionResult Prijava()
+        {
+            return View();
+        }
+
+        public IActionResult Registracija()
         {
             return View();
         }

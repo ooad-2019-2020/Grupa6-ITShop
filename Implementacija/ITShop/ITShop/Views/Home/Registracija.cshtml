@@ -1,0 +1,47 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/Registracija.css" />
+</head>
+
+<div class="registracija">
+
+    <div class="registracijaContainer">
+        <h1>REGISTRACIJA</h1>
+        <p>Za registraciju računa molimo popunite polja ispod</p>
+        <hr>
+
+        <label style="margin-bottom: 5px;" for="email"><b>E-MAIL :</b></label>
+        <input style="width: 100%; height: 40px; text-align: center; margin-bottom: 15px; margin-top: 5px;" type="text" placeholder="Molimo Vas unesite Vaš korisnički e-mail" name="email" id="email" required>
+
+        <label for="psw"><b>LOZINKA :</b></label>
+        <input style="width: 100%; height: 40px; text-align: center; margin-bottom: 15px; margin-top: 5px;" type="password" placeholder="Molimo Vas unesite lozinku za Vaš korisnički račun" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>PONOVITE VAŠU LOZINKU</b></label>
+        <input style="width: 100%; height: 40px; text-align: center; margin-bottom: 15px; margin-top: 5px;" type="password" placeholder="Molimo Vas da ponovo unesete Vašu lozinku" name="psw-repeat" required>
+
+        <label for="datum"><b>DATUM ROĐENJA</b></label><br>
+        <input style="width: 25%; height: 40px; text-align: center; margin-bottom: 15px; margin-top: 5px;" type="text" placeholder="DAN" required>
+        <input style="width: 25%; height: 40px; text-align: center; margin-bottom: 15px; margin-top: 5px;" type="text" placeholder="MJESEC" required>
+        <input style="width: 45%; height: 40px; text-align: center; margin-bottom: 15px; margin-top: 5px;" type="text" placeholder="GODINA" required>
+
+        <label for="spol"><b>SPOL</b></label><br>
+        <select style="width: 100%; height: 50px; text-align: center; margin-bottom: 15px; margin-top: 5px; text-align-last: center;">
+            <option value="musko">Muškarac</option>
+            <option value="zena">Žena</option>
+        </select>
+        <img src="images/icon.png" width="150px"><br>
+        <input style=" margin-bottom: 15px; margin-top: 5px;" type="file">
+
+
+
+
+
+
+        <button type="submit" class="registracijaButton">REGISTRUJ SE</button>
+    </div>
+
+    <div class="registracijaContainer rLogin">
+        <p>Već imate korisnički račun? Prijavi se <a href="#">ovdje</a>.</p>
+    </div>
+
+
+</div>

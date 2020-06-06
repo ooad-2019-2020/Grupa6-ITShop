@@ -1,0 +1,42 @@
+﻿@model ITShop.Data.Mis
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mis</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProizvodId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProizvodId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VrstaPrikljucka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VrstaPrikljucka)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DuzinaKabla)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DuzinaKabla)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DodatneTipke)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DodatneTipke)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

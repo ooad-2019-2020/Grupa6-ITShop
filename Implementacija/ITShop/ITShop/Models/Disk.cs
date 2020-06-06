@@ -2,7 +2,7 @@
 
 namespace ITShop.Models
 {
-    public class Disk : Proizvod
+    public class Disk //: Proizvod
     {
         public int DiskId { get; set; }
         public int ProizvodId { get; set; }

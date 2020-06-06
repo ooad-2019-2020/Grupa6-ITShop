@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ITShop.Models.Disk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProizvodId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kapacitet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brzina)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProizvodId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kapacitet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brzina)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DiskId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DiskId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DiskId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

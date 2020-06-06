@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class SSD :/* Disk,*/ ITip
+    public class SSD //: Disk, ITip
     {
         public string Tip;
         public double Velicina { get; set; }

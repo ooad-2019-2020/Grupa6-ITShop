@@ -1,5 +1,5 @@
 ﻿body {
-    background: #919191 !important;
+    background: #dddddd !important;
     margin: 50px;
 }
 
@@ -77,6 +77,8 @@
     justify-content: space-evenly;
     text-align: center;
     color: white;
+    clear: both;
+    overflow: hidden;
 }
 
     .footer h3, a {
@@ -84,3 +86,8 @@
         text-decoration: none;
         font-size: 18px;
     }
+
+   .container {
+       overflow:hidden;
+       clear:both;
+   }

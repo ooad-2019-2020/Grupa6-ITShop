@@ -58,5 +58,7 @@ namespace ITShop.Data
             
 
         }
+
+        public DbSet<ITShop.Models.MaticnaPloca> MaticnaPloca { get; set; }
     }
 }
