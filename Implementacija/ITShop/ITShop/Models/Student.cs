@@ -15,7 +15,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public int KupacId { get; set; }
+        public Kupac KupacId { get; set; }
 
         public void isprazniKorpu(bool gotovaKorpa)
         {

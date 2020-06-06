@@ -9,7 +9,7 @@ namespace ITShop.Data
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public int ProizvodId { get; set; }
+        public Proizvod ProizvodId { get; set; }
         [Display(Name = "Vrsta priključka")]
         [Required]
         public string VrstaPrikljucka { get; set; }
