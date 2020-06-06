@@ -17,11 +17,18 @@ namespace ITShop.Models
         [Required]
         public String Prezime { get; set; }
         [Display(Name = "Korisničko ime")]
+        [Required]
+        [RegularExpression("^[a-zA-Z0-9]+$")]
         public String KorisnickoIme { get; set; }
+        [Required]
+        [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")]
         public String Email { get; set; }
+        [Required]
         public String Adresa { get; set; }
+        [Required]
         [Display(Name = "Šifra")]
         public String Sifra { get; set; }
+        [Required]
         [Display(Name = "Datum rođenja")]
         public DateTime DatumRodjenja { get; set; }
     }
