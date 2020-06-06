@@ -11,8 +11,10 @@ namespace ITShop.Models
     public class KupovinaProizvoda
     {
         public int ProizvodId { get; set; }
+        //Ovaj atribut je ustvari id, ali kada pravis bazu, moras staviti da je tipa sa kojim zelis fk imati
         public Proizvod Proizvod { get; set; }
         public int KupovinaId { get; set; }
+        //Ovaj atribut je ustvari id, ali kada pravis bazu, moras staviti da je tipa sa kojim zelis fk imati
         public Kupovina Kupovina { get; set; }
     }
 }

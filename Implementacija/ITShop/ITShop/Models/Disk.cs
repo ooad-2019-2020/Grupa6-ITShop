@@ -7,6 +7,8 @@ namespace ITShop.Models
     {
         [ScaffoldColumn(false)]
         public int DiskId { get; set; }
+        [ScaffoldColumn(false)]
+        //Ovaj atribut je ustvari id, ali kada pravis bazu, moras staviti da je tipa sa kojim zelis fk imati
         public Proizvod Proizvod { get; set; }
         [RegularExpression("^[0-9+]$", ErrorMessage = "Kapacitet nije validan.")]
         [Required]

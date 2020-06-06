@@ -11,6 +11,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int AdministratorId { get; set; }
         [ScaffoldColumn(false)]
+        //Ovaj atribut je ustvari id, ali kada pravis bazu, moras staviti da je tipa sa kojim zelis fk imati
         public Uposlenik Uposlenik { get; set; }
         public void izbrisiUposlenika(int id)
         {
