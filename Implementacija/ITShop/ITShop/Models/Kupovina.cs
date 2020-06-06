@@ -11,5 +11,6 @@ namespace ITShop.Models
         [NotMapped]public List<Proizvod> ListaProizvoda { get; set; }
         public DateTime DatumTransakcije { get; set; }
         public NacinPlacanjaKlasa TipPlacanja { get; set; }
+        public double Iznos { get; set; }
     }
 }
