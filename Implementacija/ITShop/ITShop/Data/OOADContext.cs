@@ -32,6 +32,7 @@ namespace ITShop.Data
         public DbSet<Mis> Mis { get; set; }
         public DbSet<Procesor> Procesor { get; set; }
         public DbSet<KupovinaProizvoda> KupovinaProizvod { get; set; }
+        public DbSet<NacinPlacanjaKlasa> NacinPlacanja { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -44,6 +45,7 @@ namespace ITShop.Data
             builder.Entity<Student>().ToTable("Student");
             builder.Entity<Administrator>().ToTable("Administrator");
             builder.Entity<Uposlenik>().ToTable("Uposlenik");
+            builder.Entity<NacinPlacanjaKlasa>().ToTable("Nacin_Placanja");
             builder.Entity<Kupac>().ToTable("Kupac");
             builder.Entity<MaticnaPloca>().ToTable("Maticna_Ploca");
             builder.Entity<GrafickaKartica>().ToTable("Graficka_Kartica");
