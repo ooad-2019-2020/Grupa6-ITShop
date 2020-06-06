@@ -11,7 +11,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int AdministratorId { get; set; }
         [ScaffoldColumn(false)]
-        public Uposlenik UposlenikId { get; set; }
+        public int UposlenikId { get; set; }
         public void izbrisiUposlenika(int id)
         {
             // Your code here

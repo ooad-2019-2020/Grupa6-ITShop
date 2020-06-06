@@ -8,7 +8,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Proizvod ProizvodId { get; set; }
+        public int ProizvodId { get; set; }
         [Display(Name = "Broj RAM slotova")]
         [Required]
         [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]

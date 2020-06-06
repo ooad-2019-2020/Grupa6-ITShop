@@ -12,7 +12,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Proizvod ProizvodId { get; set; }
+        public int ProizvodId { get; set; }
         [Required]
         [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Zapremina je realna vrijednost.")]
         public double Zapremina { get; set; }

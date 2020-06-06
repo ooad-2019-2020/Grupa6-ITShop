@@ -14,7 +14,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Disk DiskId { get; set; }
+        public int DiskId { get; set; }
 
         public void setTip(string tip)
         {

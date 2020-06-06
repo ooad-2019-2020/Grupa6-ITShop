@@ -8,7 +8,7 @@ namespace ITShop.Models
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
-        public Proizvod ProizvodId { get; set; }
+        public int ProizvodId { get; set; }
         [Required]
         [Display(Name = "Broj jezgra")]
         [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]
