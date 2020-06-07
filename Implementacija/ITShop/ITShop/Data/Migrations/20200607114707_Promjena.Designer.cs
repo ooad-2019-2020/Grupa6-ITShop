@@ -4,14 +4,16 @@ using ITShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ITShop.Migrations
 {
     [DbContext(typeof(OOADContext))]
-    partial class OOADContextModelSnapshot : ModelSnapshot
+    [Migration("20200607114707_Promjena")]
+    partial class Promjena
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -264,33 +266,8 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Adresa")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Ime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("KorisnickoIme")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int?>("KorisnikId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Prezime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Sifra")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(15)")
-                        .HasMaxLength(15);
 
                     b.HasKey("Id");
 
@@ -714,7 +691,6 @@ namespace ITShop.Migrations
 
                     b.ToTable("Uposlenik");
                 });
-
 
             modelBuilder.Entity("ITShop.Models.ZvucnaKartica", b =>
                 {
