@@ -86,7 +86,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,Kapacitet,Brzina")] HardDisk hardDisk)
+        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,Kapacitet,Brzina,Id")] HardDisk hardDisk)
         {
             if (id != hardDisk.Id)
             {

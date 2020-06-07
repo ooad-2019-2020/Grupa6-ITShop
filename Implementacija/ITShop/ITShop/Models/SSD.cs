@@ -10,7 +10,7 @@ namespace ITShop.Models
     public class SSD : /*Disk,*/ ITip
     {
         [Required]
-        [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]
+        [RegularExpression("^^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]
         public string Naziv { get; set; }
         [Required]
         [Display(Name = "Proizvođač")]
