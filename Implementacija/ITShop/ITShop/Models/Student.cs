@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Student //: Kupac
+    public class Student //: Kupac, nece izvodjenje
     {
         [Display(Name = "Datum isteka licence")]
         [Required]

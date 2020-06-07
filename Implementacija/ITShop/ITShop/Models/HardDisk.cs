@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class HardDisk : /*Disk,*/ ITip
+    public class HardDisk : ITip
     {
         [Required]
         [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]

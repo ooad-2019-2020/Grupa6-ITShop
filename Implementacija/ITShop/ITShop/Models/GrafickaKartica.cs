@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ITShop.Models
 {
-    public class GrafickaKartica //: Proizvod
+    public class GrafickaKartica
     {
         [Required]
         [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]
