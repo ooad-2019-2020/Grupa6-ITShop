@@ -1,0 +1,67 @@
+﻿@model ITShop.Models.Monitor
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/Korisnik.css" />
+
+<h1>Želite dodati novi proizvod?</h1>
+
+<h4>Kategorija: Monitor</h4>
+<hr />
+<div class="korisnikRegistracija">
+
+   
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Naziv" class="control-label"></label><br />
+                    <input asp-for="Naziv" class="form-control" />
+                    <span asp-validation-for="Naziv" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Proizvodjac" class="control-label"></label><br />
+                    <input asp-for="Proizvodjac" class="form-control" />
+                    <span asp-validation-for="Proizvodjac" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cijena" class="control-label"></label><br />
+                    <input asp-for="Cijena" class="form-control" />
+                    <span asp-validation-for="Cijena" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dijagonala" class="control-label"></label><br />
+                    <input asp-for="Dijagonala" class="form-control" />
+                    <span asp-validation-for="Dijagonala" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Rezolucija" class="control-label"></label><br />
+                    <input asp-for="Rezolucija" class="form-control" />
+                    <span asp-validation-for="Rezolucija" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BrojHDMI" class="control-label"></label><br />
+                    <input asp-for="BrojHDMI" class="form-control" />
+                    <span asp-validation-for="BrojHDMI" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BrojVGA" class="control-label"></label><br />
+                    <input asp-for="BrojVGA" class="form-control" />
+                    <span asp-validation-for="BrojVGA" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="DODAJ PROIZVOD" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+    <div>
+        <a asp-action="Index">Pregled proizvoda u prodaji</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

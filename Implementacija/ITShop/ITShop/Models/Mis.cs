@@ -15,7 +15,7 @@ namespace ITShop.Data
         [Required]
         [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Cijena nije validna.")]
         public double Cijena { get; set; }
-        //[ScaffoldColumn(false)]
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
         //Ovaj atribut je ustvari id, ali kada pravis bazu, moras staviti da je tipa sa kojim zelis fk imati
