@@ -54,7 +54,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("")] ZvucnaKartica zvucnaKartica)
+        public async Task<IActionResult> Create([Bind("Naziv,Proizvodjac,Cijena")] ZvucnaKartica zvucnaKartica)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("")] ZvucnaKartica zvucnaKartica)
+        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena")] ZvucnaKartica zvucnaKartica)
         {
             if (id != zvucnaKartica.Id)
             {

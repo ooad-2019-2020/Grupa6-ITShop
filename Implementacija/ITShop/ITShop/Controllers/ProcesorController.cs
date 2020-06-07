@@ -54,7 +54,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BrojJezgra,BrzinaJezgra")] Procesor procesor)
+        public async Task<IActionResult> Create([Bind("Naziv,Proizvodjac,Cijena,BrojJezgra,BrzinaJezgra")] Procesor procesor)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BrojJezgra,BrzinaJezgra")] Procesor procesor)
+        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,BrojJezgra,BrzinaJezgra")] Procesor procesor)
         {
             if (id != procesor.Id)
             {

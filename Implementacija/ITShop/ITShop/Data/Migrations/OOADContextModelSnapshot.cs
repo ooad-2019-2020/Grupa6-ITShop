@@ -26,14 +26,25 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<int>("DodatneTipke")
                         .HasColumnType("int");
 
                     b.Property<int>("DuzinaKabla")
                         .HasColumnType("int");
 
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VrstaPrikljucka")
                         .IsRequired()
@@ -96,11 +107,22 @@ namespace ITShop.Migrations
                     b.Property<int>("BrojVentilatora")
                         .HasColumnType("int");
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<int>("KolicinaMemorije")
                         .HasColumnType("int");
 
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -116,8 +138,25 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Brzina")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<int?>("DiskId")
                         .HasColumnType("int");
+
+                    b.Property<int>("Kapacitet")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -194,8 +233,19 @@ namespace ITShop.Migrations
                     b.Property<int>("BrojPortova")
                         .HasColumnType("int");
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Zapremina")
                         .HasColumnType("float");
@@ -277,8 +327,19 @@ namespace ITShop.Migrations
                     b.Property<int>("BrojRAMSlotova")
                         .HasColumnType("int");
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SocketProcesora")
                         .IsRequired()
@@ -298,11 +359,22 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<int>("Kolicina")
                         .HasColumnType("int");
 
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -324,11 +396,22 @@ namespace ITShop.Migrations
                     b.Property<int>("BrojVGA")
                         .HasColumnType("int");
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<double>("Dijagonala")
                         .HasColumnType("float");
 
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Rezolucija")
                         .IsRequired()
@@ -369,8 +452,19 @@ namespace ITShop.Migrations
                     b.Property<int>("BrzinaJezgra")
                         .HasColumnType("int");
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -459,8 +553,25 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Brzina")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<int?>("DiskId")
                         .HasColumnType("int");
+
+                    b.Property<int>("Kapacitet")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Velicina")
                         .HasColumnType("float");
@@ -479,11 +590,22 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
                     b.Property<bool>("ImaLiMikrofon")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VrstaPrikljucka")
                         .IsRequired()
@@ -523,8 +645,19 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VrstaPrikljucka")
                         .IsRequired()
@@ -564,8 +697,19 @@ namespace ITShop.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Naziv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProizvodId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Proizvodjac")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

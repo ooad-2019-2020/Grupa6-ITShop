@@ -5,6 +5,15 @@ namespace ITShop.Models
 {
     public class MaticnaPloca //: Proizvod
     {
+        [Required]
+        [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]
+        public string Naziv { get; set; }
+        [Required]
+        [Display(Name = "Proizvođač")]
+        public string Proizvodjac { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Cijena nije validna.")]
+        public double Cijena { get; set; }
         [ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]

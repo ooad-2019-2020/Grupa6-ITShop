@@ -54,7 +54,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Dijagonala,Rezolucija,BrojHDMI,BrojVGA")] Monitor monitor)
+        public async Task<IActionResult> Create([Bind("Naziv,Proizvodjac,Cijena,Dijagonala,Rezolucija,BrojHDMI,BrojVGA")] Monitor monitor)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Dijagonala,Rezolucija,BrojHDMI,BrojVGA")] Monitor monitor)
+        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,Dijagonala,Rezolucija,BrojHDMI,BrojVGA")] Monitor monitor)
         {
             if (id != monitor.Id)
             {

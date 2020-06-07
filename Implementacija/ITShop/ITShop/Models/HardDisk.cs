@@ -10,6 +10,21 @@ namespace ITShop.Models
     public class HardDisk : /*Disk,*/ ITip
     {
         [Required]
+        [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "Naziv proizvoda može da sadrži slova i brojeve.")]
+        public string Naziv { get; set; }
+        [Required]
+        [Display(Name = "Proizvođač")]
+        public string Proizvodjac { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Cijena nije validna.")]
+        public double Cijena { get; set; }
+        [RegularExpression("^[0-9+]$", ErrorMessage = "Kapacitet nije validan.")]
+        [Required]
+        public int Kapacitet { get; set; }
+        [Required]
+        [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Brzina se predstavlja kao realan broj.")]
+        public int Brzina { get; set; }
+        [Required]
         private string Tip;
         [ScaffoldColumn(false)]
         public int Id { get; set; }
