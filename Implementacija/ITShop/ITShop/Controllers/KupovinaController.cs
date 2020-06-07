@@ -49,6 +49,16 @@ namespace ITShop.Controllers
             return View();
         }
 
+        public IActionResult Kartica()
+        {
+            return View();
+        }
+
+        public IActionResult Gotovina()
+        {
+            return View();
+        }
+
         public IActionResult Placanje()
         {
             return View();
