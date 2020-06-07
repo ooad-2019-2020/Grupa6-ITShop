@@ -14,7 +14,7 @@ namespace ITShop.Models
         [Required]
         [RegularExpression("^[0-9]+([,.][0-9]+)?$", ErrorMessage = "Cijena nije validna.")]
         public double Cijena { get; set; }
-        [RegularExpression("^[0-9+]$", ErrorMessage = "Vrijednost nije validna.")]
+        [RegularExpression("\\{\\d+:\\d+\\}", ErrorMessage = "Vrijednost nije validna.")]
         [Required]
         [Display(Name = "Količina")]
         public int Kolicina { get; set; }
