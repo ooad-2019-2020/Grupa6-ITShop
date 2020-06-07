@@ -26,7 +26,7 @@ namespace ITShop.Models
         public int Brzina { get; set; }
         [Required]
         private string Tip;
-        [ScaffoldColumn(false)]
+        //[ScaffoldColumn(false)]
         public int Id { get; set; }
         [ScaffoldColumn(false)]
         //Ovaj atribut je ustvari id, ali kada pravis bazu, moras staviti da je tipa sa kojim zelis fk imati
