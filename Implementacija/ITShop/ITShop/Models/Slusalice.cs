@@ -27,6 +27,7 @@ namespace ITShop.Models
         [Required]
         public string VrstaPrikljucka { get; set; }
         [Required]
+        [Display(Name = "Ima li mikrofon?")]
         public bool ImaLiMikrofon { get; set; }
     }
 }
