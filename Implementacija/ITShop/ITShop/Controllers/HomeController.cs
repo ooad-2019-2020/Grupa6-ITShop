@@ -28,6 +28,11 @@ namespace ITShop.Controllers
             return View();
         }
 
+        public IActionResult IdealniRacunar()
+        {
+            return View();
+        }
+
         public IActionResult Prijava()
         {
             return View();
