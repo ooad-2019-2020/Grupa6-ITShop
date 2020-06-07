@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ITShop.Data;
 using ITShop.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ITShop.Controllers
 {
@@ -54,6 +55,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Uposlenik")]
         public async Task<IActionResult> Create([Bind("Naziv,Proizvodjac,Cijena,Kapacitet,Brzina,Velicina")] SSD sSD)
         {
             if (ModelState.IsValid)
@@ -86,6 +88,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Uposlenik")]
         public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,Kapacitet,Brzina,Velicina,Id")] SSD sSD)
         {
             if (id != sSD.Id)
