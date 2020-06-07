@@ -85,7 +85,7 @@ namespace ITShop.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,VrstaPrikljucka,DuzinaKabla,DodatneTipke")] Mis mis)
+        public async Task<IActionResult> Edit(int id, [Bind("Naziv,Proizvodjac,Cijena,VrstaPrikljucka,DuzinaKabla,DodatneTipke,Id")] Mis mis)
         {
             if (id != mis.Id)
             {
