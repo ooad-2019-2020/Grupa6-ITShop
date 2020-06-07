@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ITShop.Models
 {
-    public class Administrator //: Uposlenik
+    public class Administrator
     {
         [ScaffoldColumn(false)]
         public int AdministratorId { get; set; }

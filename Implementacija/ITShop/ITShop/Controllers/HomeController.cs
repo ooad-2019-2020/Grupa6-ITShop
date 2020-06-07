@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ITShop.Models;
-
+//pocetna
 namespace ITShop.Controllers
 {
     public class HomeController : Controller
@@ -24,6 +24,11 @@ namespace ITShop.Controllers
         }
 
         public IActionResult ONama()
+        {
+            return View();
+        }
+
+        public IActionResult IdealniRacunar()
         {
             return View();
         }
